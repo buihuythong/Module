@@ -1,0 +1,44 @@
+<style>
+    .itemPortfolioIndex{
+        width: calc(100% / <?php echo $block->getSettingColumn(); ?>);
+        float: left;
+        padding : 0px 5px;
+        box-sizing: border-box;
+        margin-top: 50px;
+    }
+</style>
+
+<?php
+    $id = $this->getIdCategory();
+    if(isset($id)){
+        $data = $block->getDataFromCategory();
+    }else{
+        $data = $block->getAllData();
+    }
+    $urlMedia = $block->getUrlMedia();
+?>
+
+
+
+<div class="showAllIndex">
+    <?php
+    if(!empty($data)){
+        foreach ($data as $value) { ?>
+
+
+            <div class="itemPortfolioIndex">
+                <div class="thumbnailIndex">
+                    <img src="<?php echo $urlMedia . "/" . $value["thumbnail"] ?>">
+                </div>
+                <p>
+                    <a href="<?php echo $block->urlBase() ?>/magento/portfolio/portfolio/show/id/<?php echo $value['id']; ?>"> <?php echo $value["client"] ?></a>
+                </p>
+            </div>
+            <?php
+        }
+    }else{
+
+        echo "<h3>Can Not Find Any Record</h3>";
+    }
+    ?>
+</div>

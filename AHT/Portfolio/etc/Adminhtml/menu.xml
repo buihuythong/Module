@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="AHT_Portfolio::portfolio" title="Portfolio" module="AHT_Portfolio" sortOrder="10"  resource="AHT_Portfolio::portfolio"/>
+        <add id="AHT_Portfolio::category" title="Add Category" module="AHT_Portfolio" sortOrder="1" action="portfolio/category/edit" resource="AHT_Portfolio::category" parent="AHT_Portfolio::portfolio"/>
+        <add id="AHT_Portfolio::portfolio_list" title="List Portfolio" module="AHT_Portfolio" sortOrder="2" action="portfolio/portfolio/index" resource="AHT_Portfolio::portfolio_list" parent="AHT_Portfolio::portfolio"/>
+        <add id="AHT_Portfolio::portfolio_config" title="Config Portfolio" module="AHT_Portfolio" sortOrder="3" action="portfolio/config/index" resource="AHT_Portfolio::portfolio_config" parent="AHT_Portfolio::portfolio"/>
+    </menu>
+</config>

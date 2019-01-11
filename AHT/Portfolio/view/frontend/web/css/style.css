@@ -1,0 +1,61 @@
+/* Style show.phtml */
+
+.showAllShow{
+    width: 100%;
+    height: 500px;
+}
+
+.avatarShow{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.avatarShow img {
+    width: 100%;
+    height: auto;
+}
+
+.profileShow {
+    width: 70%;
+    float: right;
+}
+
+.itemPortfolioShow{
+    width: 100%;
+}
+
+.itemPortfolioShow .titleShow {
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+}
+
+
+/* Style index.phtml */
+
+.showAllIndex{
+    width: 100%;
+    height: auto;
+}
+
+.thumbnailIndex{
+    width: 100%;
+    margin: auto;
+}
+
+.thumbnailIndex img {
+    width: auto;
+    height: auto;
+}
+
+.itemPortfolioIndex p {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Style widget */
+
+/*.item {*/
+    /*color:yellow;*/
+/*}*/

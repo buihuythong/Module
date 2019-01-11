@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget id="portfolio" class="AHT\Portfolio\Block\Portfolio\PortfolioList" >
+        <label translate="true">List Portfolio</label>
+        <description translate="true">List of Portfolio</description>
+        <parameters>
+            <parameter name="recordofrow" xsi:type="text" required="false" visible="true">
+                <label translate="true">Record A Row</label>
+            </parameter>
+            <parameter name="settingCountImage" xsi:type="text" required="false" visible="true">
+                <label translate="true">Count Image Slider</label>
+            </parameter>
+            <parameter name="settingMargin" xsi:type="text" required="false" visible="true">
+                <label translate="true">Margin</label>
+            </parameter>
+            <parameter name="settingAutoPlay" xsi:type="select" required="false" visible="true">
+                <label translate="true">Auto Play Slider</label>
+                <options>
+                    <option name="default" value="1" selected="true">
+                        <label translate="true">True</label>
+                    </option>
+                    <option name="link_inline" value="0">
+                        <label translate="true">False</label>
+                    </option>
+                </options>
+            </parameter>
+            <parameter name="settingLoop" xsi:type="select" required="false" visible="true">
+                <label translate="true">Loop Slider</label>
+                <options>
+                    <option name="default" value="1" selected="true">
+                        <label translate="true">True</label>
+                    </option>
+                    <option name="link_inline" value="0">
+                        <label translate="true">False</label>
+                    </option>
+                </options>
+            </parameter>
+            <parameter name="settingNav" xsi:type="select" required="false" visible="true">
+                <label translate="true">Nav</label>
+                <options>
+                    <option name="default" value="1" selected="true">
+                        <label translate="true">True</label>
+                    </option>
+                    <option name="link_inline" value="0">
+                        <label translate="true">False</label>
+                    </option>
+                </options>
+            </parameter>
+
+            <parameter name="settingDots" xsi:type="select" required="false" visible="true">
+                <label translate="true">Dots</label>
+                <options>
+                    <option name="default" value="1" selected="true">
+                        <label translate="true">True</label>
+                    </option>
+                    <option name="link_inline" value="0">
+                        <label translate="true">False</label>
+                    </option>
+                </options>
+            </parameter>
+        </parameters>
+
+
+
+    </widget>
+</widgets>

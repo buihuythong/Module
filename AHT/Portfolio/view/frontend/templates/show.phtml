@@ -1,0 +1,40 @@
+
+<?php
+    $data = $block->showAllData();
+    $urlMedia = $block->getUrlMedia();
+
+?>
+
+
+<div class="showAllShow">
+    <div class="avatarShow">
+        <img src="<?php echo $urlMedia  . $data['image']; ?>" />
+    </div>
+    <div class="profileShow">
+        <h2>Profile Portfolio</h2>
+        <div class="itemPortfolioShow">
+            <span class="titleShow">Client : </span>
+            <span><?php echo $data["client"] ?></span>
+        </div>
+        <div class="itemPortfolioShow">
+            <span class="titleShow">Project : </span>
+            <span><?php echo $data["project"] ?></span>
+        </div>
+        <div class="itemPortfolioShow">
+            <span class="titleShow">Skill : </span>
+            <span><?php echo $data["skill"] ?></span>
+        </div>
+        <div class="itemPortfolioShow">
+            <span class="titleShow">Status : </span>
+            <span><?php echo ($data["status"]) == 1 ? "Enabled" : "Disabled" ?></span>
+        </div>
+        <div class="itemPortfolioShow">
+            <span class="titleShow">Content : </span>
+            <span><?php echo $data["content"] ?></span>
+        </div>
+        <div class="itemPortfolioShow">
+            <span class="titleShow">Category : </span>
+            <span><?php echo $block->showCategory($data['category_id']); ?></span>
+        </div>
+    </div>
+</div>
